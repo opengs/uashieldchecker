@@ -4,7 +4,7 @@ require 'sinatra'
 require 'open-uri'
 require 'net/http'
 
-ENV['http_proxy'] = "http://Us7as5:UcTYk5YNmEg2@hproxy.site:11858"
+ENV['http_proxy'] = ""
 
 SITES_GITHUB_LOCATION   = 'https://raw.githubusercontent.com/opengs/uashieldtargets/master/sites.json'
 STATUS_COLORS           = { up: 'green', down: 'red', blocked: 'orange' }.freeze
