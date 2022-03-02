@@ -22,10 +22,11 @@ GEM
 
 PLATFORMS
   x86_64-darwin-20
+  x86_64-linux
 
 DEPENDENCIES
   sinatra
   thin
 
 BUNDLED WITH
-   2.3.3
+   2.3.7
