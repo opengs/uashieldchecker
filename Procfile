@@ -1,0 +1,1 @@
+web: bundle exec ruby life_detector.rb
