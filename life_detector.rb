@@ -27,9 +27,9 @@ def run_test_request(url)
   uri = URI.parse(url)
   http = Net::HTTP.new(uri.host, uri.port)
   http.use_ssl = true if uri.scheme == 'https'
-  http.open_timeout = 1
-  http.read_timeout = 2
-  http.ssl_timeout  = 2
+  http.open_timeout = 2
+  http.read_timeout = 4
+  http.ssl_timeout  = 4
   response = http.start { |http| http.request(Net::HTTP::Get.new(uri.request_uri)) }
   response.code.to_i
 rescue StandardError
