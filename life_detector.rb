@@ -4,7 +4,7 @@ require 'sinatra'
 require 'open-uri'
 require 'net/http'
 
-SITES_GITHUB_LOCATION   = 'https://raw.githubusercontent.com/opengs/uashieldtargets/master/sites.json'
+SITES_GITHUB_LOCATION   = 'https://raw.githubusercontent.com/opengs/uashieldtargets/v2/sites.json'
 STATUS_COLORS           = { up: 'green', down: 'red', blocked: 'orange' }.freeze
 
 WITH_PROXY = true # Change this to true when not running from a native server
